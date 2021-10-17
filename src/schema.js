@@ -37,6 +37,8 @@ typeDefs = gql`
 		title: String!
 		"The Module's length in minutes"
 		length: Int @deprecated(reason: "use durationInSeconds")
+		"The module's video duration, in seconds"
+		durationInSeconds: Int
 	}
 
 	"Author of a complete Track"
