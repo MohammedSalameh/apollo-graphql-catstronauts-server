@@ -1,3 +1,3 @@
 # Catstronauts - server
 
-The starting point of the `server` code for Odyssey Lift-off I course.
+The `server` code for apollo-graphql
