@@ -37,4 +37,4 @@ const startApolloServer = async () => {
 	console.log(`🚀  Server is running! ${url}`);
 };
 
-startApolloServer();
+startApolloServer(server);
