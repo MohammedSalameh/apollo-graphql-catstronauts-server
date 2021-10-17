@@ -32,12 +32,9 @@ const server = new ApolloServer({
 	},
 });
 
-server.listen().then(() => {
-	console.log(`
-    🚀  Server is running!
-    🔉  Listening on port 4000
-    📭  Query at https://studio.apollographql.com/dev
-  `);
-});
-// data we need:
-// thumbnail image, title, author name, modyule and minutes
+const startApolloServer = async () => {
+	const { url } = server.listen({ port: process.env.PORT || 4000 });
+	console.log(`🚀  Server is running! ${url}`);
+};
+
+startApolloServer();
